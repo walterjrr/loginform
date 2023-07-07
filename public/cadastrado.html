@@ -6,8 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>voce esta cadastrado</h1>
-    <h1>{{email}}</h1>
-    <h2>{{password}}</h2>
+    <form action="/enviar-formulario2" method="post">
+        <label for="login">Login:</label>
+        <input type="text" id="login" name="login">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+
+        <input type="hidden" name="email" value="{{email}}">
+        <input type="hidden" name="password" value="{{password}}">
+        <input type="hidden" name="userName" value="{{userName}}">
+
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
