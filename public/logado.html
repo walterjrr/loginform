@@ -6,6 +6,13 @@
     <title>Document</title>
 </head>
 <body>
+    <img src={{caminhoImagem}} alt="imagem enviada">
     <h1>Você está logado, {{userName}}</h1>
+    <img src='public/imagens/imagem-1688926136002-334199988.jpg'    alt="">
+
+    <form action="/upload-imagem" method="post" enctype="multipart/form-data">
+        <input type="file" name="imagem">
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
